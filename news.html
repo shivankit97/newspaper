@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Punjab NewsPaper</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js">
+        </script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+   
+    <body ng-app="myapp">
+        <div class="container" >
+            <header class="he">
+            <h1>Udta Punjab</h1>
+            </header>
+            <hr/>
+            <nav class="above">
+                <ul>
+                    <li><a href="#!top">Top News</a></li>
+                    <li><a href="#!business">Business</a></li>
+                </ul>
+            </nav>
+        <div class="update">
+            <h2>NEWS UPDATES</h2>    
+            <p>
+            .news1<br>
+            .news2<br>
+            .news3    
+            </p>
+        </div>
+        <div class="top">
+            <h2>DIGITAL EDITION</h2>
+            <img src="paper.jpg" alt="newspaper" width="700" height="300"> 
+        </div>
+            <div ng-view class="vi"></div>
+        </div>   
+        
+        
+       
+        <script>
+        var app=angular.module("myapp",["ngRoute"]);
+        app.config(function($routeProvider){
+            $routeProvider
+            .when("/top",{
+                templateUrl : "top.html"
+            })
+            .when("/business",{
+                templateUrl : "business.html"
+            });
+            
+        });    
+        </script>
+    </body>
+</html>

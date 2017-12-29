@@ -1,0 +1,26 @@
+.update {
+    color: red;
+    float: left;
+}
+.he {
+    background-color: beige;
+    text-align: center;
+    font-size: 50;
+}
+
+.above {
+    float: right;
+}
+
+.top {
+    text-align: center;
+    
+}
+
+.vi {
+     text-align: center;
+}
+
+.container {
+    background-color: blueviolet
+}
