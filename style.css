@@ -1,14 +1,21 @@
 .update {
-    color: red;
+    font-family: serif;
+        background-color: darkorange;
+    border-style: dashed;
+    color: black;
     float: left;
 }
 .he {
+    font-family: fantasy;
     background-color: beige;
     text-align: center;
     font-size: 50;
 }
 
 .above {
+    font-family: serif;
+    background-color: darkorange;
+    border-style: dashed;
     float: right;
 }
 
@@ -17,7 +24,8 @@
     
 }
 
-.vi {
+.vi {font-family: cursive;
+        border-style: dashed;
      text-align: center;
 }
 
